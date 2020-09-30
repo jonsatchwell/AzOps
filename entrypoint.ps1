@@ -82,7 +82,7 @@ function Initialization {
             }
 
             # Initialize global variables
-            Initialize-AzOpsGlobalVariables
+            Initialize-AzOpsGlobalVariables -Debug
         }
         catch {
             Write-AzOpsLog -Level Error -Topic "entrypoint" -Message $PSItem.Exception.Message
